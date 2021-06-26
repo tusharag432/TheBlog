@@ -4,10 +4,7 @@
 session_start();
 unset($_SESSION['login']);
 unset($_SESSION['name']);
-$server = "localhost";
-$database = "blog";
-$username = "root";
-$password = "";
+include_once('connection.php');
 
 $cryptKey  = 'qJB0rGtIn5UB1xG03efyCp';
 
