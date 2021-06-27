@@ -1,0 +1,913 @@
+/* -------------------------------------------------------------Common----------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* ----------------------------------------------------------Common End---------------------------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------------------------Header Styling---------------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    margin: auto;
+}
+
+header * {
+    font-size: 1.6rem !important;
+}
+
+#contactDetails {
+    padding: 1rem 0;
+}
+
+#contactDetails #logo {
+    display: flex;
+    align-items: center;
+}
+
+#contactDetails #logo img {
+    height: 4.5rem;
+    width: 6rem;
+
+}
+
+#contactDetails .details .row>* {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contactDetails .details .row .call {
+    justify-content: flex-end;
+}
+
+#contactDetails .details .icon {
+    padding-right: 1rem;
+}
+
+#contactDetails .apply {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-around;
+}
+
+#contactDetails .apply h4 {
+    align-items: center;
+    display: inline;
+    padding: 1rem 0;
+    background-color: orangered;
+    color: white;
+    border: 1px solid grey;
+}
+
+.navbar {
+    background-color: #092038 !important;
+    z-index: 10000;
+}
+
+.navbar li {
+    padding: .5rem;
+}
+
+.navbar a:hover {
+    color: orangered !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+
+.navbar .email,
+.navbar .call,
+.navbar .apply,
+.navbar .brand {
+    display: none;
+}
+
+.navbar .dropdown-menu {
+    background-color: #788592 !important;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    header * {
+        font-size: 1.4rem !important;
+    }
+
+    #contactDetails {
+        padding: .7rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    header * {
+        font-size: 1.2rem !important;
+    }
+
+    #contactDetails {
+        padding: .5rem;
+    }
+
+    #contactDetails #logo img {
+        height: 3.5rem;
+        width: 4.7rem;
+
+    }
+
+    #contactDetails .details .icon {
+        padding-right: .5rem;
+    }
+
+    #contactDetails .apply h4 {
+        padding: .5rem 0;
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    header * {
+        font-size: 1rem !important;
+    }
+
+    #contactDetails {
+        padding: 0rem;
+    }
+
+    #contactDetails #logo img {
+        height: 2.5rem;
+        width: 3.5rem;
+
+    }
+
+    #contactDetails .apply h4 {
+        padding: .3rem 0;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    #contactDetails {
+        display: none;
+    }
+
+    .navbar .email,
+    .navbar .call,
+    .navbar .apply,
+    .navbar .brand {
+        display: contents;
+    }
+
+    .navbar .apply {
+        color: orangered !important;
+    }
+
+}
+
+
+/* --------------------Navbar Side--------------------- */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        z-index: 1000;
+        position: fixed;
+        top: 10rem;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -50%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        top: 8.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar-collapse {
+        top: 6.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        top: 4.5rem;
+    }
+}
+
+@media (max-width: 315px) {
+    .navbar-collapse {
+        top: 6.7rem;
+    }
+}
+
+/* ----------------------------------------------------Header Styling End---------------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------Carousel Styling---------------------------------------------------------------------*/
+
+
+#welcome .carousel-item img {
+    height: 500px;
+}
+
+
+#welcome .cover {
+    color: white;
+    padding-left: 15%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(44, 30, 0, 0.5);
+}
+
+#welcome .cover .text {
+    max-width: 40%;
+}
+
+#welcome .cover .text h1 {
+    font-size: 4rem;
+}
+
+#welcome .cover .text button {
+    font-size: 1.4rem;
+    border: 1px solid orangered;
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+
+}
+
+#welcome .cover .text button:hover {
+    background-color: white;
+    font-weight: 600;
+    color: orangered;
+    border: 1px solid rgb(255, 147, 108);
+}
+
+
+@media only screen and (max-width: 992px) {
+    #welcome .cover .text h1 {
+        font-size: 3.5rem;
+    }
+
+    #welcome .cover .text h4 {
+        font-size: 1.5rem;
+    }
+
+    #welcome .cover .text button {
+        font-size: 1.2rem;
+        padding: .8rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #welcome .cover .text h1 {
+        font-size: 3rem;
+    }
+
+    #welcome .cover .text h4 {
+        font-size: 1.2rem;
+    }
+
+    #welcome .cover .text button {
+        font-size: 1rem;
+        padding: .6rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    #welcome .cover .text h1 {
+        font-size: 2.5rem;
+    }
+
+    #welcome .cover .text h4 {
+        font-size: 1rem;
+    }
+
+    #welcome .cover .text button {
+        font-size: .8rem;
+        padding: .7rem;
+    }
+
+
+}
+
+/* ----------------------------------------------------carousel Styling End---------------------------------------------------------------------*/
+
+/* ----------------------------------------------------#features Styling ---------------------------------------------------------------------*/
+
+#features {
+    color: white;
+}
+
+#features .block {
+    padding: 0 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    height: 250px;
+}
+
+#features .one {
+    background-color: orangered;
+}
+
+#features .two {
+    background-color: #092038;
+}
+
+#features .icon {
+    display: flex;
+    justify-content: center;
+}
+
+#features .fa {
+    font-size: 5rem;
+}
+
+#features p {
+    font-size: 1.2rem;
+}
+
+
+
+/* ----------------------------------------------------features Styling End---------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Introduction Styling ---------------------------------------------------------------------*/
+
+#intro {
+    margin-top: 10rem;
+}
+
+
+#intro .detail h1 {
+    font-size: 3rem;
+}
+
+#intro .detail p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#intro .detail {
+    padding: 5% 3%;
+}
+
+#intro img {
+    position: relative;
+    width: 50%;
+    height: 30%;
+}
+
+#intro .images .first {
+    top: 3.5rem;
+    left: 3.5rem;
+}
+
+#intro .images .second {
+    top: 8rem;
+    left: 0;
+}
+
+#intro .images .third {
+    top: -1.5rem;
+    left: 11rem;
+}
+
+@media only screen and (max-width: 1204px) {
+
+    #intro .images .first {
+        top: 6rem;
+        left: 4rem;
+    }
+
+    #intro .images .second {
+        top: 10rem;
+        left: -4rem;
+    }
+
+    #intro .images .third {
+        top: -1rem;
+        left: 9rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #intro .detail h1 {
+        font-size: 2.7rem;
+    }
+
+    #intro .detail p {
+        font-size: 1.2rem;
+    }
+
+    #intro .images .first {
+        top: 3rem;
+        left: 4rem;
+    }
+
+    #intro .images .second {
+        top: 8rem;
+        left: -4rem;
+    }
+
+    #intro .images .third {
+        top: -3rem;
+        left: 9rem;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+
+    #intro .detail h1 {
+        font-size: 2.2rem;
+    }
+
+    #intro .detail p {
+        font-size: 1.1rem;
+    }
+
+    #intro .images .first {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    #intro .images .second {
+        top: 7rem;
+        left: -2rem;
+    }
+
+    #intro .images .third {
+        top: -2rem;
+        left: 6rem;
+    }
+}
+
+/* ----------------------------------------------------Introduction Styling end ---------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Testimonial Styling ---------------------------------------------------------------------*/
+
+#testimonial {
+    margin-top: 10rem;
+}
+
+
+#testimonial .carousel {
+    padding: 0 4rem;
+}
+
+#testimonial .carousel-item .card {
+    height: 50vh;
+    width: 100%;
+}
+
+#testimonial .carousel-item .card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#testimonial .carousel-item .text-container {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    width: 80%;
+    height: 80%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.404);
+    border: 1px solid white;
+    transition: background-color .7s;
+}
+
+#testimonial .carousel-item .text-container:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+
+@media only screen and (max-width: 786px) {
+    #testimonial .carousel-item .text-container {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* ----------------------------------------------------Testimonial Styling end ---------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------About Styling  ---------------------------------------------------------------------*/
+
+#about {
+    margin-top: 10rem;
+}
+
+#about .text {
+    margin-bottom: 10rem;
+}
+
+#about .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#about .text {
+    padding: 0 12.5%;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+#about .text span {
+    font-size: 3rem;
+}
+
+#about .feature-area {
+    margin-top: 2rem;
+    background-image: url("poster.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#about .feature-box {
+    padding: 3%;
+    padding-right: 10%;
+}
+
+#about .feature-box .inner-box {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    border: 2px solid rgb(201, 138, 3);
+    background-color: rgba(12, 12, 12, 0.7);
+    height: 100%;
+    line-height: 2.5rem;
+}
+
+#about .feature-box .inner-box p {
+    padding: 0 4rem;
+}
+
+#about .feature-box .inner-box h1 {
+    font-size: 4rem;
+}
+
+#about .feature-box .inner-box .btn {
+    font-size: 2rem;
+    background-color: rgb(201, 138, 3);
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 992px) {
+    #about .feature-area .empty-box {
+        display: none;
+    }
+
+    #about .feature-box {
+        padding: 5% 20%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #about .feature-box .inner-box h1 {
+        font-size: 3.5rem;
+    }
+
+    #about .feature-box .inner-box {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    #about .feature-box .inner-box h1 {
+        font-size: 3rem;
+    }
+
+    #about .feature-box .inner-box {
+        font-size: 1.1rem;
+    }
+
+    #about .feature-box .inner-box .fa {
+        font-size: 2rem;
+    }
+}
+
+
+/* ----------------------------------------------------About Styling end ---------------------------------------------------------------------*/
+
+/* ----------------------------------------------------Contact Styling ---------------------------------------------------------------------*/
+
+
+#contact h1 {
+    font-size: 3.5rem;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+}
+
+
+#contact .map-container iframe{
+    box-sizing: border-box !important;
+    padding: 7%;
+}
+
+#contact .text-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+#contact li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+#contact li:hover {
+    color: rgb(201, 138, 3)
+}
+
+
+@media only screen and (max-width: 768px) {
+    #contact h1 {
+        font-size: 3rem;
+    }
+    
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact .text-container {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    #contact h1 {
+        font-size: 2.7rem;
+    }
+    
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+    #contact .text-container {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+}
+
+/* ----------------------------------------------------Contact Styling end ---------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Footer Styling ---------------------------------------------------------------------*/
+
+footer{
+    margin-top: 5rem;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+/* ----------------------------------------------------Footer Styling end ---------------------------------------------------------------------*/

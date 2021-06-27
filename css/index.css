@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+html{
+    scroll-behavior: smooth;  
+    font-size: 62.5%;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spaceBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.borderAdd {
+    border: 1px solid red;
+}
+
+
+body {
+    background-color: #ece2e0;
+}
+
+.raised {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07),
+        1px 2px 4px rgba(0, 0, 0, 0.07),
+        1px 4px 8px rgba(0, 0, 0, 0.07),
+        1px 8px 16px rgba(0, 0, 0, 0.07),
+        1px 16px 32px rgba(0, 0, 0, 0.07),
+        1px 32px 64px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    background-color: #f4f1f7;
+}
+
+
+h1 {
+    color: #e04194;
+    text-shadow: 1px 1px #fff;
+    font-size: 3.5rem;
+    margin-left: 2rem;
+}
+
+section {
+    margin: 5rem;
+}
+
+/* ---------------------------------------Section Welcome Styling---------------------------------------- */
+
+/* -------------------------------------------------START------------------------------------------------ */
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    font-weight: 700;
+    height: 15%;
+}
+
+nav .brand h1 {
+    font-size: 3.5rem;
+    color: #f172a1;
+}
+
+nav .links, nav .links a{
+    color: #a1c3d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user a{
+    color: #f172a1;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    font-size: 16px;
+}
+
+nav .links div:hover, nav .links a:hover {
+    text-decoration: none;
+    color: #f172a1;
+    cursor: pointer;
+}
+
+nav .links div {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+header .heading {
+    height: 60%;
+    font-weight: 600;
+    display: flex;
+    color: #e64398;
+    text-shadow: 2px 2px #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-align: center;
+}
+
+header .message {
+    flex-direction: column;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #657075;
+    font-weight: 600;
+}
+
+header .message a{
+    color: #657075;
+}
+
+header .message .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #657075;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-weight: 700;
+    margin: 1.4rem;
+    font-size: 5rem;
+    position: relative;
+    left: 0;
+    transition: left ease 0.5s;
+}
+
+header .message .fa:hover {
+    left: 1rem;
+}
+
+#welcome {
+    height: 91vh;
+    background-image:
+        /* top, transparent red */
+        linear-gradient(#ebdee263,
+            #ebdee25e),
+        /* your image */
+        url(Cover1.jpg);
+
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* --------------------------------------------------END------------------------------------------------ */
+

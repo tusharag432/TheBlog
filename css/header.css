@@ -1,0 +1,236 @@
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+header {
+    width: 100%;
+    margin: auto;
+}
+
+header * {
+    font-size: 1.6rem !important;
+}
+
+#contactDetails {
+    padding: 1rem 0;
+}
+
+#contactDetails #logo {
+    display: flex;
+    align-items: center;
+}
+
+#contactDetails #logo img {
+    height: 4.5rem;
+    width: 6rem;
+
+}
+
+#contactDetails .details .row>* {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contactDetails .details .row .call {
+    justify-content: flex-end;
+}
+
+#contactDetails .details .icon {
+    padding-right: 1rem;
+}
+
+#contactDetails .apply {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-around;
+}
+
+#contactDetails .apply h4 {
+    align-items: center;
+    display: inline;
+    padding: 1rem 0;
+    background-color: orangered;
+    color: white;
+    border: 1px solid grey;
+}
+
+.navbar {
+    background-color: #092038 !important;
+    z-index: 10000;
+}
+
+.navbar li {
+    padding: .5rem;
+}
+
+.navbar a:hover {
+    color: orangered !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+
+.navbar .email,
+.navbar .call,
+.navbar .apply,
+.navbar .brand {
+    display: none;
+}
+
+.navbar .dropdown-menu {
+    background-color: #788592 !important;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    header * {
+        font-size: 1.4rem !important;
+    }
+
+    #contactDetails {
+        padding: .7rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    header * {
+        font-size: 1.2rem !important;
+    }
+
+    #contactDetails {
+        padding: .5rem;
+    }
+
+    #contactDetails #logo img {
+        height: 3.5rem;
+        width: 4.7rem;
+
+    }
+
+    #contactDetails .details .icon {
+        padding-right: .5rem;
+    }
+
+    #contactDetails .apply h4 {
+        padding: .5rem 0;
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    header * {
+        font-size: 1rem !important;
+    }
+
+    #contactDetails {
+        padding: 0rem;
+    }
+
+    #contactDetails #logo img {
+        height: 2.5rem;
+        width: 3.5rem;
+
+    }
+
+    #contactDetails .apply h4 {
+        padding: .3rem 0;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    #contactDetails {
+        display: none;
+    }
+
+    .navbar .email,
+    .navbar .call,
+    .navbar .apply,
+    .navbar .brand {
+        display: contents;
+    }
+
+    .navbar .apply {
+        color: orangered !important;
+    }
+
+}
+
+
+/* --------------------Navbar Side--------------------- */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        z-index: 1000;
+        position: fixed;
+        top: 10rem;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -50%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        top: 8.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar-collapse {
+        top: 6.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        top: 4.5rem;
+    }
+}
+
+@media (max-width: 315px) {
+    .navbar-collapse {
+        top: 6.7rem;
+    }
+}

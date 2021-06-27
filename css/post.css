@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;  
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: rgba(255, 255, 255, 0);
+
+    font-weight: 700;
+    height: 15%;
+}
+
+nav .brand h1 {
+    font-size: 3.5rem;
+    color: #f172a1;
+}
+
+nav .links {
+    color: #a1c3d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links > a{
+    color: #a1c3d1 !important;
+    text-decoration: none ;
+}
+
+#user a{
+    color: #f172a1;
+    text-decoration: none;
+}
+
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.dropdown-item{
+    font-size: 16px;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+nav .links div:hover,nav .links > a:hover {
+    color: #f172a1 !important;
+    cursor: pointer;
+}
+
+nav .links div,nav .links > a {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+header .heading {
+    padding-left: 4rem;
+    padding-right: 30rem;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+
+header .heading .title{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px #000;
+    margin-bottom: 1rem;
+}
+
+header .heading .description{
+    font-size: 2rem;
+    color: #d3d3d3;
+}
+
+header .heading .author{
+    color: white;
+}
+
+header .message {
+    flex-direction: column;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .message a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #657075;
+    font-weight: 600;
+}
+
+header .message .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #657075;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-weight: 700;
+    margin: 1.4rem;
+    font-size: 5rem;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .message .fa:hover {
+    top: 1rem;
+}
+
+#welcome {
+    
+
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+#content{
+    overflow-y: scroll;
+    padding: 5rem 15%;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+}

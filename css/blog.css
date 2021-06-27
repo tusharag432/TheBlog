@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+html{
+    scroll-behavior: smooth;  
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spaceBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.borderAdd {
+    border: 1px solid red;
+}
+
+
+body {
+    background-color: rgb(0 123 255 / 22%);
+}
+
+.raised {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07),
+        1px 2px 4px rgba(0, 0, 0, 0.07),
+        1px 4px 8px rgba(0, 0, 0, 0.07),
+        1px 8px 16px rgba(0, 0, 0, 0.07),
+        1px 16px 32px rgba(0, 0, 0, 0.07),
+        1px 32px 64px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    background-color: #f4f1f7;
+}
+
+
+h1 {
+    color: #e04194;
+    text-shadow: 1px 1px #fff;
+    font-size: 3.5rem;
+    margin-left: 2rem;
+}
+
+section {
+    margin: 5rem;
+}
+
+/* ---------------------------------------Section Welcome Styling---------------------------------------- */
+
+/* -------------------------------------------------START------------------------------------------------ */
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    font-weight: 700;
+    height: 15%;
+}
+
+nav .brand h1 {
+    font-size: 3.5rem;
+    color: #f172a1;
+}
+
+nav .links {
+    color: #a1c3d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links > a{
+    color: #a1c3d1 !important;
+    text-decoration: none ;
+}
+
+
+#user a{
+    color: #f172a1;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    font-size: 16px;
+}
+
+nav .links div:hover,nav .links > a:hover {
+    color: #f172a1 !important;
+    cursor: pointer;
+}
+
+nav .links div,nav .links > a {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+header .heading {
+    height: 60%;
+    font-weight: 600;
+    display: flex;
+    color: #e64398;
+    text-shadow: 2px 2px #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-align: center;
+}
+
+header .message {
+    flex-direction: column;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #657075;
+    font-weight: 600;
+}
+
+header .message a{
+    color: #657075;
+}
+
+header .message .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #657075;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-weight: 700;
+    margin: 1.4rem;
+    font-size: 5rem;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .message .fa:hover {
+    top: 1rem;
+}
+
+#welcome {
+    height: 91vh;
+    background-image:
+        /* top, transparent red */
+        linear-gradient(#dedeeb50,
+            #dedeeb50),
+        /* your image */
+        url(Cover2.jpg);
+
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* --------------------------------------------------END------------------------------------------------ */
+
+/* ---------------------------------------Section Welcome Styling ---------------------------------------- */
+
+#sample {
+    height: 40rem;
+    width: 35rem;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07),
+        1px 2px 4px rgba(0, 0, 0, 0.07),
+        1px 4px 8px rgba(0, 0, 0, 0.07),
+        1px 8px 16px rgba(0, 0, 0, 0.07),
+        1px 16px 32px rgba(0, 0, 0, 0.07),
+        1px 32px 64px rgba(0, 0, 0, 0.07);
+    padding: 0.15rem;
+
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.card .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000021;
+}
+
+
+.card .content>* {
+    background-color: #000000ad;
+    padding: 1rem 1rem;
+    color: rgb(193, 193, 193);
+}
+
+
+.card .content .visible h2,
+.card .content .visible h3 {
+    color: #f090c1;
+}
+
+.card .content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.card .content a {
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.card .content .hoverVisible {
+    display: none;
+}
+
+
+.card .content:hover .hoverVisible {
+    display: block;
+    animation: fade-in 1s;
+}
+
+.card .content:not(:hover) .hoverVisible.did-fade-in {
+    display: block;
+    animation: fade-out 0.5s;
+}
+
+
+#highlightContent .card-container {
+
+    width: 100%;
+    height: 60vh;
+}
+
+
+
+
+.otherHighlights img {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+#posts .card-container {
+    height: 45vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.7rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .otherHighlights {
+        display: none;
+    }
+
+}
+
+
+.category {
+    margin: 4rem 0;
+}
